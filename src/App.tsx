@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import AirportDistanceScreeen from './features/airportDistance/screens/AirportDistance';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient()
 
 function App() {
   
@@ -8,7 +11,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          <AirportDistanceScreeen/>
+          <QueryClientProvider client={queryClient} >
+            <AirportDistanceScreeen/>
+          </QueryClientProvider>
         </p>
       </header>
     </div>

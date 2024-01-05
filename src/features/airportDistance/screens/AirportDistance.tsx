@@ -15,7 +15,8 @@ const AirportDistanceScreeen = () => {
     const [selectedOrigin, setSelectedOrigin] = useState<MaybeAirport>(undefined)
     const [selectedDest, setSelectedDest] = useState<MaybeAirport>(undefined)
 
-    const airports = useAirportList()
+    const airportsQueryResult = useAirportList()
+    const airports = airportsQueryResult.data || []
 
     const distance = useAirportDistance(
         selectedOrigin,

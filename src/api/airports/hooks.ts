@@ -1,8 +1,14 @@
-import * as airports from './airports.json'
+import { useQuery } from 'react-query'
 import haversine from 'haversine-distance'
 
 export function useAirportList() {
-  return airports as AirportsApi.Airport[];
+  return useQuery(
+    ['airports'],
+    async () => {
+      const airports = await fetch('http://localhost:5000/airpors')
+      return (await airports.json()) as AirportsApi.Airport[]
+    }
+  )
 }
 
 export function useAirportDistance(
