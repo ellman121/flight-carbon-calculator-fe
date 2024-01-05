@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useAirportDistance } from './api/airports/hooks';
 
-// Internaltional long haul flights CO2e per passenger-kilometer
 // 0.2613 kg/passenger-km (combustion)
 // 0.02114 kg/passenger-km (well to tank)
-
-// 
+const FACTOR_WELL_TO_TANK = 0.02114
+const FACTOR_DISTANCE = 0.2613 
 
 function App() {
 
@@ -29,8 +27,8 @@ function App() {
     })
 
   const kms = tokyoToMunich / 1000
-  const emissions_wellToTank = kms * 0.02114 // UK estimate https://.....
-  const emissions_distance = kms * 0.2613 // UK estimate https://.....
+  const emissions_wellToTank = kms * FACTOR_WELL_TO_TANK
+  const emissions_distance = kms * FACTOR_DISTANCE
   
   return (
     <div className="App">
