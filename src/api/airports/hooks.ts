@@ -5,7 +5,7 @@ export function useAirportList() {
   return useQuery(
     ['airports'],
     async () => {
-      const airports = await fetch('http://localhost:5000/airpors')
+      const airports = await fetch('http://localhost:5000/airports')
       return (await airports.json()) as AirportsApi.Airport[]
     }
   )
