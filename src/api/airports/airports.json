@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Hamad International Airport",
+        "code": "DOH",
+        "coords": {
+            "lat": 25.273056,
+            "lon": 51.608056
+        }
+    },
+    {
+        "name": "Haneda Airport",
+        "code": "HDN",
+        "coords": {
+            "lat": 35.553333,
+            "lon": 139.781111
+        }
+    },
+    {
+        "name": "Singapore Changi Airport",
+        "code": "SIN",
+        "coords": {
+            "lat": 1.359167,
+            "lon": 103.989444
+        }
+    },
+    {
+        "name": "Incheon International Airport",
+        "code": "ICN",
+        "coords": {
+            "lat": 37.463333,
+            "lon": 126.44
+        }
+    },
+    {
+        "name": "Narita International Airport",
+        "code": "NRT",
+        "coords": {
+            "lat": 35.765278,
+            "lon": 140.385556
+        }
+    },
+    {
+        "name": "Munich Airport",
+        "code": "MUC",
+        "coords": {
+            "lat": 48.353889,
+            "lon": 11.786111
+        }
+    },
+    {
+        "name": "Zurich Airport",
+        "code": "ZRH",
+        "coords": {
+            "lat": 47.464722,
+            "lon": 8.549167
+        }
+    },
+    {
+        "name": "Heathrow Airport",
+        "code": "LHR",
+        "coords": {
+            "lat": 51.4775,
+            "lon": -0.461389
+        }
+    },
+    {
+        "name": "Kansai International Airport",
+        "code": "KIX",
+        "coords": {
+            "lat": 34.430556,
+            "lon": 135.230278
+        }
+    },
+    {
+        "name": "Hong Kong International Airport",
+        "code": "HKG",
+        "coords": {
+            "lat": 22.308889,
+            "lon": 113.91
+        }
+    }
+]
